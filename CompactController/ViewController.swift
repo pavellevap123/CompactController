@@ -34,6 +34,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     
     @objc private func presentButtonTapped(_ sender: UIButton) {
         vc.delegate = self
+        vc.view.backgroundColor = .tertiarySystemGroupedBackground
         vc.preferredContentSize = CGSize(width: 300, height: 280)
         vc.modalPresentationStyle = .popover
         vc.popoverPresentationController?.delegate = self
